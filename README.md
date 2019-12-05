@@ -38,6 +38,19 @@ if (co.GetComponent<EnemyMove>())
         {
             Destroy(gameObject);
             Death();
+ When Enemy reach the coin or hearts, they will disappear and the score inscreases 
+ 1 coins is counted 10 points
+ 1 heart is counted 1
+ 
+ if (co.GetComponent<Coin>())
+        {
+            coinAmount += 10;
+        }
+        //Heart is counted 1 
+        if (co.GetComponent<Heart>())
+        {
+            heartAmount += 1;
+ 
  
  
 
